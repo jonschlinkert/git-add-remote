@@ -1,0 +1,57 @@
+{
+  "name": "git-add-remote",
+  "description": "API for adding git remotes.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/git-add-remote",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/git-add-remote",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/git-add-remote/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "delete": "^0.3.2",
+    "gfc": "^1.0.0",
+    "gulp-format-md": "^0.1.12",
+    "list-git-remotes": "^1.0.1",
+    "mocha": "^3.2.0"
+  },
+  "keywords": [
+    "add",
+    "git",
+    "remote"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "gfc",
+        "git-branch",
+        "git-user-email",
+        "git-user-name",
+        "git-username",
+        "list-git-remotes"
+      ]
+    },
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
