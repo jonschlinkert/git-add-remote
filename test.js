@@ -58,12 +58,17 @@ describe('git-add-remote', function() {
             return;
           }
 
-          var obj = remotes.sync(fixtures());
-          assert(obj.hasOwnProperty('foo'));
-          assert.equal(obj.foo, 'https://github/foo/foo.git');
+          remotes(fixtures(), function(err, obj) {
+            if (err) {
+              cb(err);
+              return;
+            }
 
-          del.sync(fixtures());
-          cb();
+            assert(obj.hasOwnProperty('foo'));
+            assert.equal(obj.foo, 'https://github/foo/foo.git');
+            del.sync(fixtures());
+            cb();
+          });
         });
       });
     });
