@@ -1,7 +1,7 @@
 {
   "name": "git-add-remote",
   "description": "API for adding git remotes.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/git-add-remote",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/git-add-remote",
@@ -14,7 +14,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "mocha"
@@ -44,6 +44,7 @@
       "list": [
         "gfc",
         "git-branch",
+        "git-config-path",
         "git-user-email",
         "git-user-name",
         "git-username",
